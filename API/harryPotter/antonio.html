@@ -4,7 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<style>
+			@font-face {
+   		font-family:'Cinzel';
+   		src: url(../harryPotter/assets/font/Cinzel-VariableFont_wght.ttf);}
+			body{
+				font-family: 'Cinzel';
+			}
+		</style>
+		<title>H⚡P</title>
 	</head>
 	<body>
 		<div id="root"></div>
@@ -19,7 +27,7 @@
 
 			const GenerateHtml = (htmlAntigo, personagem) => {
 				htmlAntigo += `
-				<div style="padding: 10px; background: #c4c4c4; margin: 10px;">
+				<div style="padding: 10px; background: #c4c4c4; margin: 10px; font-weight: 600;">
 				    Nome: ${personagem.name}
 				    Casa: ${personagem.house}
 				    Genero: ${personagem.gender === "male" ? "Pia" : "Guria"}
